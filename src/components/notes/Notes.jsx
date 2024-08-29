@@ -34,7 +34,7 @@ const Notes = () => {
     
     setChatHistory([...chatHistory, newNote]);
     setText('');
-    window.location.reload();
+    
   };
 
   const goBack = () => {
