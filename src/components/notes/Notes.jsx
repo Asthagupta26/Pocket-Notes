@@ -5,7 +5,7 @@ import { useNavigate, useParams } from 'react-router-dom';
 import { useShort } from '../../useShort';
 import { FaArrowLeft } from 'react-icons/fa';
 
-const ChatNotes = () => {
+const Notes = () => {
   const [text, setText] = useState("");
   const [chatHistory, setChatHistory] = useState([]);
   const navigate = useNavigate();
@@ -74,4 +74,4 @@ const ChatNotes = () => {
   );
 };
 
-export default ChatNotes;
+export default Notes;
