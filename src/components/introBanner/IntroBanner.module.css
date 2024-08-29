@@ -1,0 +1,54 @@
+.banner {
+    margin-left: 25vw;
+    height: 100vh;
+    background: #DAE5F5;
+}
+
+.textContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90%;
+    width: 75vw;
+}
+
+.banner img {
+    object-fit: cover;
+}
+
+.encryptionInfo {
+    margin-top: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.title {
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 58.59px;
+    letter-spacing: 0.02em;
+    text-align: left;
+}
+
+@media screen and (max-width: 768px) {
+    .banner {
+        margin-left: 35vw;
+    }
+
+    .banner img {
+        width: 65%;
+    }
+
+    .textContainer {
+        width: 65vw;
+    }
+}
+
+@media screen and (max-width: 431px) {
+    .mobileBanner {
+        display: none;
+    }
+}

@@ -1,0 +1,8 @@
+@media (max-width: 425px) {
+    .mobileMenu{
+        width: 100vw !important;
+    }
+    .mobileHero{
+        display: none;
+    }
+}

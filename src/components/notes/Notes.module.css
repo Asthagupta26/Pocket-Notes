@@ -1,0 +1,139 @@
+.notes{
+    margin-left: 25vw;
+    height: 100vh;
+    max-width: 72vw;
+}
+
+.header{
+    width: 75vw;
+    height: 10vh;
+    background-color: #001F8B;
+    overflow-x: hidden;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    color: white;
+    overflow: hidden;
+}
+
+.back{
+    margin-left: 1.25rem ;
+    display: none;
+}
+
+.bubble{
+    color: white;
+    padding: 0.5rem;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    margin-left: 1rem;
+}
+
+.body{
+    padding: 0rem 1rem;
+    width: 100%;
+    height: 65vh;
+    background-color: #DAE5F5;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.body::-webkit-scrollbar{
+    width: 10px;
+}
+
+.body::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.body::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 5px;
+}
+
+.body::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.message{
+    background-color: #FFFFFF;
+    padding: 10px;
+    margin: 20px 10px;
+    line-height: 1.5;
+    border-radius: 5px;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.5);
+}
+
+.date{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    color: #353535;
+    gap: 1rem;
+    margin-top: 10px;
+    font-weight: 500 !important;
+}
+
+
+.input{
+    display: flex;
+    justify-content: center;
+    height: 25vh;
+    align-items: center;
+    background-color: #001F8B;
+    position: relative;
+    width: 74vw;
+    overflow-x: hidden;
+}
+
+.input textarea{
+    resize: none;
+    background-color: white;
+    margin: auto;
+    padding: 10px 6rem 10px 20px;
+    color: black;
+    width: 85%;
+    height: 82%;
+    border-radius: 5px;
+}
+
+.send{
+    position: absolute;
+    right: 2%;
+    bottom: 3%;
+    background-color: transparent;
+    color:#001F8B; 
+}
+
+.send:disabled{
+    color: gray !important;
+    cursor: not-allowed;
+}
+
+@media (max-width:768px) {
+    .notes,.header, .input{
+        width: 65vw;
+    }
+    .notes{
+        margin-left: 35vw;
+    }
+}
+
+@media screen and (max-width: 431px) {
+    .mobileChat{
+        width: 100vw !important;
+        margin-left: 0;
+    }
+    .notes,.header,.body, .input{
+        width: 100vw;
+    }
+    .back{
+        display: block;
+    }
+    .bubble{
+        margin-left: 0;
+    }
+    .headder{
+        gap: 0.5rem !important;
+    }
+}
